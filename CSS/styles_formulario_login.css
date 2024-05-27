@@ -1,0 +1,197 @@
+/* style.css */
+
+/* Estilo básico */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo do rótulo e do popup */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.helper-text {
+    color: red;
+    font-size: 0.9em;
+    display: none; /* Esconde por padrão */
+}
+
+.required-popup {
+    display: block; /* Mostra quando a classe é adicionada */
+}
+
+/* Outros estilos aqui */
+
+/* Estilo básico do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo do cabeçalho */
+header.titulo {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Estilo do parágrafo dentro do cabeçalho */
+header.titulo p {
+    font-size: 1.5em;
+}
+
+/* Estilo da barra de navegação */
+nav.nevegacao {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Estilo da logo na navegação */
+nav.nevegacao .logoM {
+    height: 50px;
+}
+
+/* Estilo da lista de navegação */
+nav.nevegacao ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+/* Estilo dos itens da lista de navegação */
+nav.nevegacao ul li {
+    display: inline;
+}
+
+/* Estilo dos links da navegação */
+nav.nevegacao ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Estilo dos links da navegação ao passar o mouse */
+nav.nevegacao ul li a:hover {
+    background-color: #575757;
+}
+
+/* Estilo do botão na navegação */
+nav.nevegacao button {
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilo dos links dentro do botão de navegação */
+nav.nevegacao button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estilo da imagem da cesta na navegação */
+nav.nevegacao .cesta img {
+    height: 40px;
+}
+
+/* Estilo da seção principal */
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilo do aside (seção de login) */
+aside.entrar, article {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+/* Estilo dos títulos nas seções de login e cadastro */
+aside.entrar h4, article h4 {
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+/* Estilo dos rótulos de formulário */
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Estilo dos campos de entrada de formulário */
+form input[type="email"], form input[type="text"], form input[type="password"], form input[type="senha"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Espaça os itens igualmente ao longo da linha principal */
+    align-items: flex-start; /* Alinha os itens no início da linha cruzada */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se necessário */
+}
+
+.footer-container > div {
+    margin: 10px; /* Espaço entre os itens */
+}
+
+.img-rodape img {
+    height: 100px;
+}
+
+
+/* --------- ESTILOS DINAMINCOS -------- */
+.required-popup::after{
+    content: "*Campo Obrigatorio";
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #dfdfdf;
+    font-size: .65rem;
+    padding: .2rem .3rem;
+    width: auto;
+    display: block;
+    background-color: #202020;
+}
+
+input.error{
+    border: solid 2px red;
+    background-color: #ccc;
+    color: #662020;
+}
+
+input.correct {
+    background-color: #bbccbb;
+    border: solid 2px green;
+    color: #206620;
+}
+
+.visible {
+    display: block;
+}
